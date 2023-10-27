@@ -1,0 +1,20 @@
+The user opens the project and sees the login page (index.html). If they have previously registered, they can log in by entering their user ID and password; if not, they see a button below that takes them to the registration page, which is an HTML file called register.html. 
+Once the user clicks the "Register" button, a window titled "Register Page" appears. The user must fill out all the required fields and submit the form to reach the login.java (servlet page). JDBC is then used to store the user's information in the designated database table. The user is then automatically redirected to the login page, index.html, via the request dispatcher forward method.
+The user clicks the login button after completing the relevant fields on the login screen. By doing this, users are directed to the log.java (servlet file), where the system presents the outcome after validating data from the database. The request dispatcher include method is used to display an invalid message if the user is not valid; otherwise, the request dispatcher forward method is used to process them to the dashboard page.
+We can see the homepage, logout, about us, and course features from the dashboard's header. Within the project, each page has a header.
+The primary information is displayed in the dashboard header below. It consists of the user's name and a welcome greeting, an image of the current class activity, and a link to the courses. On the dashboard, every button has an anchor tag (<a>) that allows us to navigate.
+Once the courses button is clicked, a grid of all the courses appears. This indicates that every course is connected to the database, thus all the courses we receive are obtained dynamically through the database using the course table, which has the following information: course name, course description, course, thumbnail, and course link.
+Following a click on the specific course, the videos page loads, displaying every video with its metadata obtained from the URL and a query string parameter. We then retrieve the course name, description, and link to access the course. The file video_play.jsp is named.
+All of the information regarding the lessons we offer is available on our "about" page. It's the aboutus.html HTML page.
+If we go back to the dashboard a second time, the welcome with user name becomes the welcome back.
+When the user hits the session button, the last option is logout, which closes the session. A page confirming the logout is displayed, along with a button allowing the user to go back to the login screen if desired.
+
+
+
+The technologies employed in this project are as follows:
+Servlet
+JDBC.
+Request dispatcher
+Sessions
+JSP
+
